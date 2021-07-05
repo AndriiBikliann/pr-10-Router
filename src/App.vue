@@ -1,19 +1,16 @@
 <template>
   <div id="app">
+
+   <h1> Мій сайт</h1>
+   <div>
+     <router-link to ="/" class = "menu"> Home </router-link>
+     <router-link to ="/about" class = "menu"> About </router-link>
+     <router-link to ="/list" class = "menu"> Products </router-link>
+     <router-link to ="/add" class = "menu"> Add new product </router-link>
+   </div>
+   
+   <router-view> </router-view>
     
-    <div class="menu">
-      <div>
-        <router-link to ="/">Усі товари</router-link>
-      </div>
-      <div>
-        <router-link to ="/create">Додати товар</router-link>
-      </div>
-    </div>
-
-    <div>
-        <router-view> </router-view>
-    </div>
-
   </div>
 </template>
 
